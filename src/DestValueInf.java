@@ -1,5 +1,5 @@
 
-public class DestValueInf {
+public class DestValueInf implements Cloneable{
 	
 	
 	public String dest;
@@ -10,6 +10,12 @@ public class DestValueInf {
 		this.dest = dest;
 
 		this.influence = influence;
+	}
+	
+	DestValueInf(DestValueInf g)
+	{
+		this.dest=g.dest;
+		this.influence = g.influence;
 	}
 	
 	public String getDest(){
@@ -26,6 +32,7 @@ public class DestValueInf {
 	{
 		influence=r;
 	}
+	
 	
 	
 	
